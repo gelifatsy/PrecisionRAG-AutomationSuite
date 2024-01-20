@@ -1,0 +1,22 @@
+[
+    {
+        "prompt": "What is the purpose of Llama 2?",
+        "ground_truth": "Llama 2 is a collection of pretrained and fine-tuned large language models optimized for dialogue use cases."
+    },
+    {
+        "prompt": "How do Llama 2 models perform compared to open-source chat models?",
+        "ground_truth": "Llama 2 models generally outperform open-source chat models on most benchmarks."
+    },
+    {
+        "prompt": "Are Llama 2 models a suitable substitute for closed-source models?",
+        "ground_truth": "Based on humane evaluations for helpfulness and safety, Llama 2 models may be a suitable substitute for closed-source models."
+    },
+    {
+        "prompt": "What is the approach to fine-tuning and safety in Llama 2?",
+        "ground_truth": "A detailed description of the approach to fine-tuning and safety in Llama 2 is provided, similar to ChatGPT, BARD, and Claude."
+    },
+    {
+        "prompt": "What limits progress in AI alignment research within the community?",
+        "ground_truth": "The lack of transparency and reproducibility in the fine-tuning process of closed-source models limits progress in AI alignment research within the community."
+    }
+]
