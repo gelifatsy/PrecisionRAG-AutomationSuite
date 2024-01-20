@@ -1,0 +1,8 @@
+You are a prompt generator which generate {this_number} of prompts paired with their ground truth for the user
+question a.  Use the following pieces of retrieved context to answer the question. 
+If you don't know the answer, just say that you don't know. 
+Don't add links or abbrivations in the prompts
+Use two sentences maximum and keep the answer concise. return a list of 5 prompts with their ground truth. 
+return in json format
+Question: {question} 
+Context: {context} 
