@@ -1,0 +1,20 @@
+Alan Schelten Ruan Silva Eric Michael Smith Ranjan Subramanian Xiaoqing Ellen Tan Binh Tang
+Ross Taylor Adina Williams Jian Xiang Kuan Puxin Xu Zheng Yan Iliyan Zarov Yuchen Zhang
+Angela Fan Melanie Kambadur Sharan Narang Aurelien Rodriguez Robert Stojnic
+Sergey Edunov Thomas Scialom
+GenAI, Meta
+Abstract
+In this work, we develop and release Llama 2, a collection of pretrained and ﬁne-tuned
+large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters.
+Our ﬁne-tuned LLMs, called L/l.sc/a.sc/m.sc/a.sc /two.taboldstyle-C/h.sc/a.sc/t.sc , are optimized for dialogue use cases. Our
+models outperform open-source chat models on most benchmarks we tested, and based on
+ourhumanevaluationsforhelpfulnessandsafety,maybeasuitablesubstituteforclosedsource models. We provide a detailed description of our approach to ﬁne-tuning and safety
+asChatGPT,BARD,andClaude. TheseclosedproductLLMsareheavilyﬁne-tunedtoalignwithhuman
+preferences, which greatly enhances their usability and safety. This step can require signiﬁcant costs in
+computeandhumanannotation,andisoftennottransparentoreasilyreproducible,limitingprogresswithin
+the community to advance AI alignment research.
+In this work, we develop and release Llama 2, a family of pretrained and ﬁne-tuned LLMs, L/l.sc/a.sc/m.sc/a.sc /two.taboldstyle and
+L/l.sc/a.sc/m.sc/a.sc /two.taboldstyle-C/h.sc/a.sc/t.sc , at scales up to 70B parameters. On the series of helpfulness and safety benchmarks we tested,
+L/l.sc/a.sc/m.sc/a.sc /two.taboldstyle-C/h.sc/a.sc/t.sc models generally perform better than existing open-source models. They also appear to
+be on par with some of the closed-source models, at least on the human evaluations we performed (see
+A2qXzbHspgrZJIa0/PcFIOcahRM8lmlnxmeUjahI96zVNGYmyBfLDsjF1YZkijR9ikkC/V3IqexMdM4tJMxxbFZ9ebif14vw+gmyIVKM+SKLT+KMkkwIfPLyVBozlBOLaFMC7srYWOqKUPbT8WW4K2evE7aV3XPrXsP17XmbVFHGc7gHC7BgwY04R5a4AMDAc/wCm+Ocl6cd+djOVpyiswp/IHz+QPvmo68</latexit>G1
