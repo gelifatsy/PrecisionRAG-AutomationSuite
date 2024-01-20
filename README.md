@@ -20,13 +20,21 @@ Follow these steps to get started with PrecisionRAG-AutomationSuite:
 
 ## Clone the Repository:
 
-### bash
-Copy code
+### bash Copy code
 git clone https://github.com/gelifatsy/PrecisionRAG-AutomationSuite.git
-Installation:
 
-Copy code
+## Contributing
+1. Fork it!
+2. Create your feature branch: git checkout -b my-new-feature
+3. Commit your changes: git commit -am 'Add some feature'
+4. Push to the branch: git push origin my-new-feature
+5. Submit a pull request :D
+
+## Installation
+```python
 pip install -r requirements.txt
+```
+
 ### Usage:
 
 Detailed instructions and examples for each service are available in their respective directories.
