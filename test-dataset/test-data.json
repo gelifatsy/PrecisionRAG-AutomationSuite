@@ -1,22 +1,22 @@
 [
     {
-        "prompt": "What is the purpose of Llama 2?",
-        "ground_truth": "Llama 2 is a collection of pretrained and fine-tuned large language models optimized for dialogue use cases."
+        "prompt": "What is LangChain designed to help with?",
+        "ground_truth": "LangChain is designed to help with prompt management, chains, data augmented generation, agents, memory, and evaluation."
     },
     {
-        "prompt": "How do Llama 2 models perform compared to open-source chat models?",
-        "ground_truth": "Llama 2 models generally outperform open-source chat models on most benchmarks."
+        "prompt": "What are the main areas that LangChain focuses on?",
+        "ground_truth": "LangChain focuses on prompt management, chains, data augmented generation, agents, memory, and evaluation."
     },
     {
-        "prompt": "Are Llama 2 models a suitable substitute for closed-source models?",
-        "ground_truth": "Based on humane evaluations for helpfulness and safety, Llama 2 models may be a suitable substitute for closed-source models."
+        "prompt": "What is the purpose of LangChain?",
+        "ground_truth": "The purpose of LangChain is to assist in building applications with LLMs through composability."
     },
     {
-        "prompt": "What is the approach to fine-tuning and safety in Llama 2?",
-        "ground_truth": "A detailed description of the approach to fine-tuning and safety in Llama 2 is provided, similar to ChatGPT, BARD, and Claude."
+        "prompt": "What are some common examples of applications that LangChain can be used for?",
+        "ground_truth": "Some common examples of applications that LangChain can be used for include question answering over specific documents and chatbots."
     },
     {
-        "prompt": "What limits progress in AI alignment research within the community?",
-        "ground_truth": "The lack of transparency and reproducibility in the fine-tuning process of closed-source models limits progress in AI alignment research within the community."
+        "prompt": "What is the real power of using LLMs in combination with other sources of computation or knowledge?",
+        "ground_truth": "The real power comes when you can combine LLMs with other sources of computation or knowledge to create truly powerful applications."
     }
 ]
