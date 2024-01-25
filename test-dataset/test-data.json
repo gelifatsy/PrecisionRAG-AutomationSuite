@@ -1,22 +1,22 @@
 [
     {
         "prompt": "What is LangChain designed to help with?",
-        "ground_truth": "LangChain is designed to help with prompt management, chains, data augmented generation, agents, memory, and evaluation."
+        "ground_truth": "LangChain is designed to help with prompt management, prompt optimization, generic interface for all LLMs, and common utilities for working with LLMs."
     },
     {
-        "prompt": "What are the main areas that LangChain focuses on?",
-        "ground_truth": "LangChain focuses on prompt management, chains, data augmented generation, agents, memory, and evaluation."
+        "prompt": "What are chains in LangChain?",
+        "ground_truth": "Chains in LangChain are sequences of calls, either to an LLM or a different utility, and LangChain provides a standard interface for chains."
     },
     {
-        "prompt": "What is the purpose of LangChain?",
-        "ground_truth": "The purpose of LangChain is to assist in building applications with LLMs through composability."
+        "prompt": "What is the purpose of the 'Getting Started' guide for chains?",
+        "ground_truth": "The 'Getting Started' guide for chains in LangChain helps users to quickly get up and running with chains."
     },
     {
-        "prompt": "What are some common examples of applications that LangChain can be used for?",
-        "ground_truth": "Some common examples of applications that LangChain can be used for include question answering over specific documents and chatbots."
+        "prompt": "What does the 'Reference' section provide in the LangChain documentation?",
+        "ground_truth": "The 'Reference' section in the LangChain documentation provides API reference documentation for all Chain classes."
     },
     {
-        "prompt": "What is the real power of using LLMs in combination with other sources of computation or knowledge?",
-        "ground_truth": "The real power comes when you can combine LLMs with other sources of computation or knowledge to create truly powerful applications."
+        "prompt": "What does LangChain provide for deploying LangChain apps?",
+        "ground_truth": "LangChain provides a collection of instructions, code snippets, and template repositories for deploying LangChain apps."
     }
 ]

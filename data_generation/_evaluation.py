@@ -1,7 +1,10 @@
 import os
+import sys
+import json
+sys.path.insert(0, '/home/elias/Documents/10 Academy/WEEK 6/PrecisionRAG-AutomationSuite')
 from openai import OpenAI
-from _data_generation import get_completion
-from _data_generation import file_reader
+from data_generation._data_generation import get_completion
+from data_generation._data_generation import file_reader
 from dotenv import find_dotenv, load_dotenv
 import numpy as np
 
@@ -44,15 +47,32 @@ def evaluate(prompt: str, user_message: str, context: str) -> str:
     return classification
 
 if __name__ == "__main__":
+   
     context_message = file_reader("prompts/context.txt")
     prompt_message = file_reader("prompts/generic-evaluation-prompt.txt")
     context = str(context_message)
     prompt = str(prompt_message)
     
-    user_message = str(input("question: "))
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.realpath(__file__))
     
-    try:
-        result = evaluate(prompt, user_message, context)
-        print(result)
-    except Exception as e:
-        print(f"Error: {e}")
+
+    # Go one level up from the script's directory
+    base_dir = os.path.dirname(script_dir)
+
+    # Specify the file path relative to the base directory
+    file_path = os.path.join(base_dir, "test-dataset/test-data.json")
+    
+    # Read the generated prompts file
+    with open(file_path, 'r') as f:
+        prompts = json.load(f)
+
+    # Extract the questions from the prompts
+    questions = [prompt['prompt'] for prompt in prompts]
+    
+    # Evaluate each question
+    for question in questions:
+        print(evaluate(prompt, question, context))
+    
+    
+

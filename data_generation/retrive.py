@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.insert(0, '/home/elias/Documents/10 Academy/WEEK 6/PrecisionRAG-AutomationSuite' )
 from dotenv import find_dotenv, load_dotenv
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -48,7 +50,8 @@ def retrieve_context(query, k=3):
     
     
     # Ensure the directory exists before writing the file
-    folder_path = "../prompts"
+    folder_path = "prompts"
+    print(folder_path)
     os.makedirs(folder_path, exist_ok=True)
 
     file_path = os.path.join(folder_path, 'context.txt')
@@ -56,7 +59,11 @@ def retrieve_context(query, k=3):
         file.write(source_knowledge)
     return context
 
+if __name__ == "__main__":
+    query = str(input("inputText: "))
+    print(retrieve_context(query))
+
 # Example usage
-# query = "What is langchain?"
-# retrieved_context = retrieve_context(query)
-# print(retrieved_context)
+query = "langchian documentation?"
+retrieved_context = retrieve_context(query)
+print(retrieved_context)
