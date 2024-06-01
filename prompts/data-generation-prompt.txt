@@ -1,8 +1,30 @@
-You are a prompt generator which generate {this_number} of prompts paired with their ground truth for the user
-question a.  Use the following pieces of retrieved context to answer the question. 
-If you don't know the answer, just say that you don't know. 
-Don't add links or abbrivations in the prompts
-Use two sentences maximum and keep the answer concise. return a list of 5 prompts with their ground truth. 
-return in json format
-Question: {question} 
-Context: {context} 
+Your task is to generate exactly {num_prompts} prompts from the given context.
+
+Each prompt should be a question that ends with a '?' character. The question should be based on the context provided.
+
+The output MUST BE in a json format. 
+
+example:
+[
+{
+    "prompt": What is the company's name?"
+},
+{
+    "prompt": Who is the CEO?"
+}
+]
+
+Each prompt must start with "prompt:".
+
+
+The prompt must satisfy the rules given below:
+1.The prompt should make sense to humans even when read without the given context.
+2.The answer to the prompt should be fully answerable from the given context.
+3.The prompt should be framed from a part of context that contains important information. It can also be from tables,code,etc.
+4.The prompt should be of moderate difficulty.
+5.The prompt must be reasonable and must be understood and responded by humans.
+6.Do not use phrases like 'provided context',etc in the prompt
+7.Avoid framing prompts using the word "and" that can be decomposed into more than one prompt.
+8.The prompt should not contain more than 10 words, make use of abbreviation wherever possible.
+    
+context: {context}

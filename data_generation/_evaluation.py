@@ -46,9 +46,9 @@ def evaluate(prompt: str, user_message: str, context: str) -> str:
             classification = 'false'
     return classification
 
-if __name__ == "__main__":
-   
-    context_message = file_reader("prompts/context.txt")
+
+def main():
+    context_message = file_reader("prompts/context2.txt")
     prompt_message = file_reader("prompts/generic-evaluation-prompt.txt")
     context = str(context_message)
     prompt = str(prompt_message)
@@ -61,18 +61,25 @@ if __name__ == "__main__":
     base_dir = os.path.dirname(script_dir)
 
     # Specify the file path relative to the base directory
-    file_path = os.path.join(base_dir, "test-dataset/test-data.json")
+    file_path = os.path.join(base_dir, "test-dataset/test-data4.json")
     
     # Read the generated prompts file
     with open(file_path, 'r') as f:
         prompts = json.load(f)
 
     # Extract the questions from the prompts
-    questions = [prompt['prompt'] for prompt in prompts]
+    # questions = [prompts['prompt'] for prompt in prompts]
+    questions = [item["prompt"] for item in prompts["prompts"]]
+
+    print(prompts)
+    print()
     
     # Evaluate each question
     for question in questions:
         print(evaluate(prompt, question, context))
     
     
-
+    
+    
+if __name__ == "__main__":
+    main()
