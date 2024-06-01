@@ -1,0 +1,122 @@
+[
+    {
+        "prompts": [
+            {
+                "prompt": "What are the core tasks for this week's challenge in Automatic Prompt Engineering?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            },
+            {
+                "prompt": "What is the minimum requirement for the interim submission in the challenge?",
+                "ground_truth": "The minimum requirement is to have a well-structured repository with some coding progress made."
+            },
+            {
+                "prompt": "What is the deadline for the final submission in the challenge?",
+                "ground_truth": "The final submission deadline is Saturday 8pm UTC."
+            },
+            {
+                "prompt": "What are the key performance indicators for the session on Tuesday in the challenge?",
+                "ground_truth": "The key performance indicators include understanding prompt ranking, understanding prompt matching, and ability to reuse previous knowledge."
+            },
+            {
+                "prompt": "What is the instruction for the Automatic Prompt Engineering Fundamental Tasks in the challenge?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            }
+        ]
+    },
+    {
+        "prompts": [
+            {
+                "prompt": "What are the core tasks for this week's challenge in Automatic Prompt Engineering?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining the system based on feedback."
+            },
+            {
+                "prompt": "What is the minimum requirement for the GitHub repository in the interim submission?",
+                "ground_truth": "The minimum requirement is to have a well-structured repository with some coding progress made."
+            },
+            {
+                "prompt": "What is the deadline for the final submission?",
+                "ground_truth": "The final submission deadline is Saturday 8pm UTC."
+            },
+            {
+                "prompt": "What are the key performance indicators for Tuesday's session?",
+                "ground_truth": "The key performance indicators include understanding prompt ranking, understanding prompt matching, and ability to reuse previous knowledge."
+            },
+            {
+                "prompt": "What is the instruction for the Automatic Prompt Engineering fundamental tasks?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining the system based on feedback."
+            }
+        ]
+    },
+    {
+        "prompts": [
+            {
+                "prompt": "What are the core tasks for this week's challenge in Automatic Prompt Engineering?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            },
+            {
+                "prompt": "What is the minimum requirement for the GitHub repository in the interim submission?",
+                "ground_truth": "The minimum requirement is to have a well-structured repository with some coding progress made."
+            },
+            {
+                "prompt": "What is the deadline for the final submission?",
+                "ground_truth": "The final submission deadline is Saturday 8pm UTC."
+            },
+            {
+                "prompt": "What are the key performance indicators for Tuesday's session?",
+                "ground_truth": "The key performance indicators include understanding prompt ranking, understanding prompt matching, and ability to reuse previous knowledge."
+            },
+            {
+                "prompt": "What is the instruction for the Automatic Prompt Engineering fundamental tasks?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            }
+        ]
+    },
+    {
+        "prompts": [
+            {
+                "prompt": "What are the core tasks for this week's challenge in Automatic Prompt Engineering?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            },
+            {
+                "prompt": "What is the minimum requirement for the GitHub repository in the interim submission?",
+                "ground_truth": "The minimum requirement is to have a well-structured repository with some coding progress made."
+            },
+            {
+                "prompt": "What is the deadline for the final submission?",
+                "ground_truth": "The final submission deadline is Saturday 8pm UTC."
+            },
+            {
+                "prompt": "What are the key performance indicators for Tuesday's session?",
+                "ground_truth": "The key performance indicators include understanding prompt ranking, understanding prompt matching, and ability to reuse previous knowledge."
+            },
+            {
+                "prompt": "What is the instruction for the Automatic Prompt Engineering Fundamental Tasks?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            }
+        ]
+    },
+    {
+        "prompts": [
+            {
+                "prompt": "What are the core tasks for this week's challenge in Automatic Prompt Engineering?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            },
+            {
+                "prompt": "What is the minimum requirement for the interim submission in the challenge?",
+                "ground_truth": "The minimum requirement is to have a well-structured repository with some coding progress made."
+            },
+            {
+                "prompt": "What is the deadline for the final submission in the challenge?",
+                "ground_truth": "The final submission deadline is Saturday 8pm UTC."
+            },
+            {
+                "prompt": "What are the key performance indicators for Tuesday's session in the challenge?",
+                "ground_truth": "The key performance indicators include understanding prompt ranking, understanding prompt matching, and ability to reuse previous knowledge."
+            },
+            {
+                "prompt": "What is the instruction for the Automatic Prompt Engineering Fundamental Tasks in the challenge?",
+                "ground_truth": "The core tasks include understanding prompt engineering tools and concepts, familiarizing with language models, developing a plan for prompt generation and testing, setting up a development environment, designing a user interface for prompt system, planning integration of LLMs, building and refining prompt generation system, developing automatic evaluation data generation system, implementing prompt testing and evaluation mechanism, and refining and optimizing system based on feedback."
+            }
+        ]
+    }
+]
