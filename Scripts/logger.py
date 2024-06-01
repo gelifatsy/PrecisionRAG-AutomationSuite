@@ -1,29 +1,35 @@
 import logging
 import os
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+def logger(log_directory="../logs"):
+  """
+  Configures logging with separate files for errors, warnings, infos, and console output.
 
-formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
+  Args:
+      log_directory (str, optional): The directory to store log files. Defaults to "../logs".
+  """
 
-error_handler = logging.FileHandler(f'{script_dir}/../logs/errors.log')
-error_handler.setLevel(logging.ERROR)
-error_handler.setFormatter(formatter)
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  logger = logging.getLogger(__name__)
+  logger.setLevel(logging.DEBUG)
 
-info_handler = logging.FileHandler(f'{script_dir}/../logs/infos.log')
-info_handler.setLevel(logging.INFO)
-info_handler.setFormatter(formatter)
+  formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s - %(message)s')
 
+  handlers = [
+      logging.FileHandler(os.path.join(script_dir, log_directory, "errors.log"), level=logging.ERROR, formatter=formatter),
+      logging.FileHandler(os.path.join(script_dir, log_directory, "infos.log"), level=logging.INFO, formatter=formatter),
+      logging.FileHandler(os.path.join(script_dir, log_directory, "warnings.log"), level=logging.WARNING, formatter=formatter),
+      logging.StreamHandler(formatter=formatter),
+  ]
 
-warning_handler = logging.FileHandler(f'{script_dir}/../logs/warnings.log')
-warning_handler.setLevel(logging.WARNING)
-warning_handler.setFormatter(formatter)
+  for handler in handlers:
+    logger.addHandler(handler)
 
-stream_handler = logging.StreamHandler()
-stream_handler.setFormatter(formatter)
+# Example usage
+logger()
 
-logger.addHandler(error_handler)
-logger.addHandler(info_handler)
-logger.addHandler(warning_handler)
-logger.addHandler(stream_handler)
+# Use the logger throughout your code
+logger.debug("This is a debug message")
+logger.info("This is an info message")
+logger.warning("This is a warning message")
+logger.error("This is an error message")

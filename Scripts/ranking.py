@@ -1,9 +1,9 @@
 import random
-from logger import logger
+# from logger import logger
 
 
 def monte_carlo_eval(prompt):
-    try:
+  
         # Simulating different types of responses
         response_types = ['highly relevant', 'somewhat relevant', 'irrelevant']
         scores = {'highly relevant': 3, 'somewhat relevant': 2, 'irrelevant': 1}
@@ -18,13 +18,11 @@ def monte_carlo_eval(prompt):
         # Average score represents the evaluation
         return total_score / trials
     
-    except Exception as e:
-        logger.error(f"An unexpected error occurred: {e}")
-        return None 
+   
 
 
 def elo_eval(prompt, base_rating=1500):
-    try:
+   
 
         # Simulate the outcome of the prompt against standard criteria
         # Here, we randomly decide if the prompt 'wins', 'loses', or 'draws'
@@ -43,9 +41,7 @@ def elo_eval(prompt, base_rating=1500):
     
         return new_rating
     
-    except Exception as e:
-        logger.error(f"An unexpected error occurred: {e}")
-        return None 
+ 
 
 
 def elo_ratings_func(prompts, elo_ratings, K=30, opponent_rating=1600):

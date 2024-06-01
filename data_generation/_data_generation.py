@@ -11,7 +11,7 @@ sys.path.insert(0, '/home/elias/Documents/10 Academy/WEEK 6/PrecisionRAG-Automat
 
 from dotenv import find_dotenv, load_dotenv
 from openai import OpenAI
-from data_generation.retrive import retrieve_context
+# from data_generation.retrive import retrieve_context
 
 env_file_path = find_dotenv(raise_error_if_not_found=True)
 load_dotenv(env_file_path)
@@ -56,23 +56,24 @@ def generate_test_data(prompt, context, num_test_output):
     return API_RESPONSE.choices[0].message.content
 
 def save_json(test_data):
-    file_path = "test-dataset/test-data.json"
+    file_path = "test-dataset/test-data5.json"
     json_object = json.loads(test_data)
     with open(file_path, 'w') as json_file:
         json.dump(json_object, json_file, indent=4)
 
     print(f"JSON data has been saved to {file_path}")
 
-def main(num_test_output, inputText: str):
-    context_message=context=retrieve_context(inputText)
+def main(num_test_output):
+    # context_message=context=retrieve_context(inputText)
   
 
 # Get the parent directory of the current script directory
-    # current_script_directory = os.path.dirname(os.path.realpath(__file__))
-    # print(current_script_directory)
+    current_script_directory = os.path.dirname(os.path.realpath(__file__))
+    print(current_script_directory)
 
     # print(parent_directory)
-    context = file_reader(os.path.join("prompts/context.txt"))
+    # context = file_reader(os.path.join("prompts/context2.txt"))
+    context= file_reader(os.path.join("prompts/context2.txt"))
     prompt = file_reader(os.path.join("prompts/data-generation-prompt.txt"))
     test_data = generate_test_data(prompt, context, num_test_output)
     save_json(test_data)
@@ -83,5 +84,5 @@ def main(num_test_output, inputText: str):
     print(test_data)
 
 if __name__ == "__main__":
-    user_input = str(input("inputText: "))
-    main("5", user_input)  # n number of test data to generate
+    # user_input = str(input("inputText: "))
+    main("5")  # n number of test data to generateo
