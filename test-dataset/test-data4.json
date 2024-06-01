@@ -1,0 +1,32 @@
+[
+    {
+        "prompt": "What is the purpose of the encoder in neural sequence transduction models?"
+    },
+    {
+        "prompt": "How does the decoder generate an output sequence in neural sequence transduction models?"
+    },
+    {
+        "prompt": "What is the architecture of the Transformer model?"
+    },
+    {
+        "prompt": "How many layers are there in the encoder of the Transformer model?"
+    },
+    {
+        "prompt": "What is the dimension of the output produced by the sub-layers in the Transformer model?"
+    },
+    {
+        "prompt": "What is the role of the third sub-layer in the decoder of the Transformer model?"
+    },
+    {
+        "prompt": "How is the attention function described in neural sequence transduction models?"
+    },
+    {
+        "prompt": "What is the significance of attention mechanisms in sequence modeling?"
+    },
+    {
+        "prompt": "What is the main difference between the Transformer model and recurrent models in sequence modeling?"
+    },
+    {
+        "prompt": "What is the advantage of using self-attention in the Transformer model over other models?"
+    }
+]
